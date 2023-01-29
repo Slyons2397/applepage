@@ -1,0 +1,8 @@
+.bg-apple-white {
+  background-color: #fbfbfd;
+}
+
+.bi-apple:hover {
+  color: white;
+  transition-duration: 400ms;
+}
