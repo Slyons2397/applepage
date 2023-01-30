@@ -6,3 +6,7 @@
   color: white;
   transition-duration: 400ms;
 }
+
+.bg-vday {
+  background-color: #fcd7ca;
+}

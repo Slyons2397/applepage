@@ -15,9 +15,39 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Apple</title>
   </head>
   <body class="bg-black">
+    <div
+      class="modal fade"
+      id="onload"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              This is <b>NOT</b> an official or affiliated Apple site.
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            Please do <b>NOT</b> enter any personal information.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav
       class="navbar navbar-expand-lg bg-black navbar-dark fixed-top mb-5 px-5"
     >
@@ -54,7 +84,7 @@
             >
             <a class="nav-item nav-link text-secondary" href="#">Accessories</a>
             <a class="nav-item nav-link text-secondary" href="#">Support</a>
-            <div class="bg-secondary px-4 rounded-pill"">
+            <div class="bg-secondary px-3 rounded-pill"">
             <a
               class="nav-item nav-link text-white order-first order-md-last"
               href="#"
@@ -103,8 +133,11 @@
     </div>
     <div class="row pt-5">
       <div class="col d-flex flex-column align-items-center text-center">
-        <h1 class="text-white display-1">iPhone</h1>
-        <p class="text-white">Pro.Beyond.</p>
+        <h1 class="text-white display-5">
+          <b><i class="bi bi-apple"></i>WATCH</b>
+        </h1>
+        <p class="text-danger lead">SERIES 8</p>
+        <h3 class="text-white">A healthy leap ahead.</h3>
       </div>
     </div>
     <div class="row mt-2 d-flex justify-content-evenly">
@@ -115,10 +148,70 @@
     </div>
     <div class="row mt-5 pb-5">
       <div class="col d-flex flex-column align-items-center">
-        <img class="img-fluid w-25" src="./images/iPhone.svg" />
+        <img class="img-fluid w-50" src="./images/applewatch.png" />
       </div>
     </div>
-
+    <div class="row bg-white pt-2 justify-content-evenly">
+      <div class="col-sm-6 bg-black p-4 text-center border border-white">
+        <h1 class="text-white dispay-1">MacBook Pro</h1>
+        <p class="lead text-white">Supercharged by M2 Pro and M2 Max.</p>
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <a href="#" class="nav-item nav-link text-primary">Learn More > </a>
+            <a href="#" class="nav-item nav-link text-primary">Buy > </a>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <img class="img-fluid w-100" src="./images/macbookpro.png" />
+        </div>
+      </div>
+      <div class="col-sm-6 bg-black p-4 text-center border border-white">
+        <h1 class="text-white dispay-1">HomePod</h1>
+        <p class="lead text-white">Profound sound.</p>
+        <p>Available starting 2.3</p>
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <a href="#" class="nav-item nav-link text-primary">Learn More > </a>
+            <a href="#" class="nav-item nav-link text-primary">Buy > </a>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <img class="img-fluid w-100" src="./images/homepod.png" />
+        </div>
+      </div>
+    </div>
+    <div class="row bg-white pt-1 justify-content-evenly">
+      <div class="col-sm-6 bg-black p-4 text-center border border-white">
+        <h1 class="text-white dispay-1">
+          Creativity and community. <br />
+          Woven together.
+        </h1>
+        <p class="lead text-white">
+          Explore the new Black Unity watch band and matching face.
+        </p>
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <a href="#" class="nav-item nav-link text-primary">Learn More > </a>
+            <a href="#" class="nav-item nav-link text-primary">Buy > </a>
+          </div>
+        </div>
+        <div class="col mt-5 pt-5">
+          <img class="img-fluid w-100" src="./images/applewatch2.png" />
+        </div>
+      </div>
+      <div class="col-sm-6 bg-vday p-4 text-center border border-white">
+        <h1 class="text-black dispay-1">Valentine's Day</h1>
+        <p class="lead text-black">Sealed with a gift.</p>
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <a href="#" class="nav-item nav-link text-primary">Shop now > </a>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <img class="img img-fluid" src="./images/vday.png" />
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -129,5 +222,15 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = () => {
+        $("#onload").modal("show");
+      };
+    </script>
   </body>
 </html>
